@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka+One&display=swap');
+
+
+
+body {
+    background-color: snow;
+    color: slategray;
+    font-family: "Baloo 2", cursive;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1em;
+}
+  
+h1 {
+font-family: 'Fredoka One', cursive;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: slategray;
+}
+
+a:hover {
+    background-color: slategray;
+    color: snow;
+}
+
+img {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    padding: 0 10px;
+}
+
+header, footer {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-align: left;
+}
+
+.full {
+    width: 100%
+}
+
+.half {
+    width: 50%;
+}
+
+.third {
+    width: 33%;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-flow: row wrap;
+    }
+    
+    aside {
+        width: 20%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    main {
+        width: 80%;
+    }
+}
